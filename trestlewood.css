@@ -11,9 +11,28 @@ font-family: Arial,sans-serif;
 	margin-bottom: 5px;
 	background: transparent;
 }
+/*
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+{
+	border-color: #ebdbba;
+	background-color: #ebdbba;		
+}
+*/
 .navbar-default .navbar-toggle{
 	border-color: #ebdbba;
+	background-color: #ebdbba;
+	padding:5px 5px;
+	margin:5px;
 }
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+{
+	border-color: #ddd;
+	background-color: rgba(0,0,0,0.3) !important;
+}
+
 
 .navbar-wrapper{
   color: #5a5a5a;
@@ -63,7 +82,8 @@ display:none;}
 	padding: 3px 0px;
 	margin: 0px 0px;
 }
-
+ 
+ 
 }
 @media (min-width: 480px) { 
 .navbar-wrapper > .container-fluid > .header-nav > .container-fluid > .navbar-header >.logo-div > .logo {
@@ -102,6 +122,10 @@ display:block;
 	padding: 0px 15px;
 }
 
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  
 } 
 /* LARGE DEVICES (LARGE DESKTOPS, 1200PX AND UP) */
 @media (min-width: 1200px) { 
@@ -125,8 +149,6 @@ display:block;
 .navbar-wrapper > .container-fluid > .header-nav > .container-fluid > .navbar-header >.logo-row1 {
 display:none;
 }
-
-
 
 }
 
@@ -161,7 +183,7 @@ margin: 0px 0px;
 }	
 .usermenu-container {
 	min-height: 32px !important;
-	height:32px;
+/*	height:32px; */
 }
 .navbar-nav > li > a{
 padding-top:5px;
@@ -183,6 +205,44 @@ float:none;
 
 .content-wrapper{
 background-color: #EBDBBA;
+}
+/*  to display ul menu on hover */
+.ul-dropdown-menu {
+	/*
+background: #b69e72 url(bg.png) !important;
+*/
+background: #bfac78 url(bg.png) !important;
+}
+ .navbar-nav  {
+     display: inline;
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #5a5a5a;
+   }
+   .navbar-nav > li:hover,
+	.navbar-nav > .open > a:hover,
+	.navbar-nav > .open > a:focus{
+	background-color:rgba(0,0,0,0.05) !important;
+	color:#555;
+   }
+    .ul-dropdown-menu > li > a:hover,
+    .ul-dropdown-menu > li > a:focus {
+     /*
+	 background-color: #bfac78;
+	 */
+	 background-color:#b69e72 !important;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+	   
+     border-bottom: 1px solid #38453e; 
+     border-radius: 0;
+   }
+ 
+ /* end of display ul menu on hover */
+
+.navbar-collapse {
+	padding-right:0px;
 }
 
 .footer{
